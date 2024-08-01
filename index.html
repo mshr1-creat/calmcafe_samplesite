@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calmcafe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="../../_common/images/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+  <link href="../../_common/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Calm cafe</h1>
+    <section>
+      <nav>
+        <ul class="menu-bar">
+          <li><a href="index.html">home</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <section>
+    <div class="slide">
+      <div class="image_box">
+        <img src="image/coffee.jpeg" id="main_image">
+      </div>
+      <div class="toolbar">
+        <div class="nav">
+          <div id="prev"></div>
+          <i class="bi bi-arrow-left-circle"></i>
+          <div id="next"> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h2 class="concept">-------------------------------- concept ---------------------------------</h2>
+  <h3>コーヒーの香ばしいかおりがただよう店内は、落ち着いたジャズミュージックが流れており、日々の忙しい時間を忘れさせてくれる至福の一杯を丁寧にお作りしています。
+    訪れたお客様に心落ち着く時間を過ごしていただけるような空間づくりを心がけています。</h3>
+  <h2 class="coffee">-------------------------------- coffee --------------------------------</h2>
+  <h3 class="introduction">当店では、ブラジルやコロンビア、キリマンジャロなど、世界各国のコーヒー豆を厳選して仕入れています。焙煎も店内で行っており、挽きたての香りの良いコーヒーを提供しています。</h3>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <script src="script.js"></script>
+    <section>
+      <div class="info">
+        <h1 class="access">Calm cafe</h1>
+        <p>adress   〒160-0001 東京都新宿区新宿5丁目123-333</p>
+        <p>telephone   00-123-555</p>
+        <p>mail   calmcafe123@sample.mail</p>
+        <p><small class="copy_wright">&copy; 2023 calmcafe.jp</small></p>
+      </div>
+    </section>
+  </footer>
+  <script>
+  'use strict'
+
+    const images = ['image/coffee.jpeg', 'image/Coffee_beans.jpeg', 'image/espresso.jpeg'];
+    let current = 0;
+
+    function changeImage(num) {
+      if(current + num >= 0 && current + num < images.length) {
+          current += num;
+          document.getElementById('main_image').src = images[current];
+      }
+    };
+
+    document.getElementById('prev').onclick = function() {
+      changeImage(-1);
+    };
+    document.getElementById('next').onclick = function() {
+      changeImage(1);
+    };
+
+</script>
+
+  </body>
+
+</html>

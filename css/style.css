@@ -1,0 +1,326 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color:#f8dfb0 inherit;
+  font-family: Monotype Corsiva;
+  text-decoration: none
+}
+.logo-img{
+  width: 120px;
+  height: auto;
+}
+.page-header h1 {
+  font-size: 48px;
+  padding-left: 8px;
+}
+.page-header h1 .menu {
+  font-size: 64px;
+}
+nav .menu-bar {
+  color:#f8dfb0;
+  text-align: right;
+  margin-left: o auto;
+  }
+.topimg {
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+}
+.menu-bar {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px
+  list-style-type: none
+  text-align: center;
+}
+.menu-bar li {
+  margin-left: 36px;
+}
+.menu-bar a{
+  color: #432;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.concept {
+  margin-top: 50px;
+}
+.coffee {
+  margin-top: 50px;
+}
+.introduction {
+  margin-bottom: 100px;
+}
+
+/* menu design */
+dl.menu{
+  width:100%;
+  font-size: 1rem;
+  }
+dl.menu div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 0;
+  }
+dl.menu div::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+  border-bottom: dotted 1px #000;
+  }
+dl.menu dt{
+  margin:0;
+  padding: 0 5px 0 0;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: left;
+  }
+dl.menu dd{
+  margin:0;
+  padding: 0 0 0 5px;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: right;
+  }
+
+/* スライドショー */
+.slide {
+  margin : 0 auto;
+  border: 1px solid black;
+  width: 720px;
+  background-color: black;
+}
+img {
+  max-width: 100%;
+}
+.toolbar {
+  overflow: hidden;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+#prev {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+  background: url(images/arrow-left.svg) no-repeat;
+}
+#next {
+  margin-left: 0.5rem;
+  width: 16px;
+  height: 16px;
+  background: url(images/arrow-right.svg) no-repeat;
+}
+.menu_image {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* customize-design */
+dl.customize{
+  width:100%;
+  font-size: 1rem;
+  }
+dl.customize div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 0;
+  }
+dl.customize div::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+  border-bottom: dotted 1px #000;
+  }
+dl.customize dt{
+  margin:0;
+  padding: 0 5px 0 0;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: left;
+  }
+dl.customize dd{
+  margin:0;
+  padding: 0 0 0 5px;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: right;
+  }
+
+/* about.html */
+.staff h2 {
+  text-decoration: underline;
+}
+.img-owner {
+  width: 300px;
+  height: auto;
+  margin-left:  1010px;;
+}
+.img-staff {
+  width: 300px;
+  height: auto;
+  margin-left:  310px;;
+}
+.open {
+  margin-top: 100px;
+}
+.open h2 {
+  text-decoration: underline;
+}
+.open h3 {
+  text-align: center;
+}
+
+  /* background */
+body{
+  background-color:#ffe8b1;
+ }
+section.title_area{
+  background-color: #974B04;
+  width: 1920px;
+  height: 300px;
+}
+section.text_area nav ul.menu-bar{
+  text-align: right;
+}
+section.test_area{
+   max-width:800px;
+   margin:0 auto;
+   padding:20px;
+   background-color:#ffe8b1;
+ }
+.menu {
+  text-align: center;
+}
+
+/* contact */
+.contact {
+  background-image: url(../image/form.jpeg);
+  min-height: 60vh;
+  margin-top: 50px;
+}
+.sub-title h3 {
+  margin: 1000px;
+}
+
+/* フォーム */
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255,255,255,.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* 店舗情報・地図 */
+#location {
+  padding: 4% 0;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+.location-map {
+  width: 74%;
+}
+.sub-title {
+  text-decoration:underline;
+}
+
+/* SNS */
+#sns {
+  background: #FAF7F0;
+  padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+  margin:0 auto;
+}
+.sns-box svg {
+  width: 50px;
+  height: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.footerimg {
+  width: 10%;
+  height: 10%;
+  margin-left: 1200px;
+}
+
+footer {
+  background-color: #d28c4a;
+  margin-top: 50px;
+}
+
+.copy_wright {
+  text-align: center;
+  margin-left: 750px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 48px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
